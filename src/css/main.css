@@ -134,7 +134,7 @@
 table thead th {
     background-color: #353b48;
     position: sticky;
-    z-index: 100;
+    z-index: 1;
     top: -1px;
 }
 
