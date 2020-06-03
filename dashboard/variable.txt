@@ -1,0 +1,13 @@
+Stud_ID (PK)	         ID number of the Student	INT	11
+First_name	             First name of the Student	Varchar	50
+Middle_name	             name of the Student	Varchar	50
+Last_name	            Last name of the Student	Varchar	50
+Age	                    Age of the Student	INT	11
+Gender	                Sexuality	Varchar	50
+Address	                Where the student live	Varchar	50
+Birthday	                When did the student born	Varchar	50
+Birth_place	                Where did the student born	Varchar	50
+Status	                    Student’s status	Varchar	50
+Nationality	            Student’s nationality	Varchar	50
+Religion	            Student’s religion	Varchar	50
+Stud_phonenum	                For emergency purposes	Varchar	50
