@@ -14,6 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../src/css/w3css.css">
     <link rel="stylesheet" href="../src/css/main.css">
     <link rel="icon" href="../src/icon/jp logo.png">
@@ -61,13 +62,13 @@
         </form>
     </nav>
     <!-- **************************************************************************** -->
-    <div class="container-fluid bg-light" style="margin-top:50px;">
+    <div class="container-fluid bg-gradient-blue shadow-lg w3-animate-zoom" style="margin-top:60px;">
         <form action="dashprocess.php" method="POST">
             <div>
                 <div>
                     <br>
-                    <h3>ENROLLMENT FORM</h3>
-                    <hr style="background-color:black;height:1px;margin-top: -3px">
+                    <h2>ENROLLMENT FORM</h3>
+                        <hr style="background-color:black;height:1px;margin-top: 30px">
                 </div>
                 <div class="container-fluid">
                     <div class="row">
@@ -78,33 +79,33 @@
                                 <input name="imageUpload" id="imageUpload" class="file-upload" style="visibility:hidden;" type="file" accept="image/*">
                             </div>
                         </div>
-                        <div class="col-md" style="margin-left:-10px;">
+                        <div class="col-md" style="margin-left:-5px;">
                             <hr style=" background-color:black;height:1px;margin-top: -10px">
                             <div class="text-center " style="width:150px;margin-left: 15px ">
-                                <p class="bg-white " style="margin-top:-30px ">STUDENT INFO</p>
+                                <p class="bg-light " style="margin-top:-30px ">STUDENT INFO</p>
                             </div>
                             <div class="form-row ">
-                                <div class="col-md mb-3 ">
+                                <div class="col-md mb-3">
                                     <span>First Name</span>
-                                    <input name="guardian " type="text" class="form-control" placeholder="First Name" value="" required>
+                                    <input name="guardian " type="text" class="form-control shadow" placeholder="First Name" value="" required>
                                 </div>
                                 <div class="col-md mb-3 ">
                                     <span>Last Name</span>
-                                    <input name="guardian " type="text" class="form-control" placeholder="Last Name" value="" required>
+                                    <input name="guardian " type="text" class="form-control shadow" placeholder="Last Name" value="" required>
                                 </div>
                                 <div class="col-md mb-3 ">
                                     <span>Middle Name</span>
-                                    <input name="guardian " type="text" class="form-control" placeholder="Middle Name" value="" required>
+                                    <input name="guardian " type="text" class="form-control shadow" placeholder="Middle Name" value="" required>
                                 </div>
                             </div>
                             <div class="form-row ">
                                 <div class="col-md-3 mb-3 ">
                                     <span>Age</span>
-                                    <input name="guardian" type="text" class="form-control" placeholder="Age" value="" required>
+                                    <input name="guardian" type="text" class="form-control shadow" placeholder="Age" value="" required>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <span>Gender</span>
-                                    <select name="gender" class="custom-select mr-sm-2 ">
+                                    <select name="gender" class="custom-select mr-sm-2 shadow">
                                     <option selected>........</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -112,27 +113,27 @@
                                 </div>
                                 <div class="col-md mb-3 ">
                                     <span>Birth Date</span>
-                                    <input name="bdate" type="date" class="form-control" value="" required>
+                                    <input name="bdate" type="date" class="form-control shadow" value="" required>
                                 </div>
                             </div>
                             <div class="form-row ">
                                 <div class="col-md mb-3 ">
                                     <span>Address</span>
-                                    <input name="guardian " type="text " class="form-control" placeholder="Address" value="" required>
+                                    <input name="guardian " type="text " class="form-control shadow" placeholder="Address" value="" required>
                                 </div>
                                 <div class="col-md-5 mb-3 ">
                                     <span>Nationality</span>
-                                    <input name="guardian " type="text " class="form-control" placeholder="Nationality" value="" required>
+                                    <input name="guardian " type="text " class="form-control shadow" placeholder="Nationality" value="" required>
                                 </div>
                             </div>
                             <div class="form-row ">
                                 <div class="col-md mb-3">
                                     <span>Birth Place</span>
-                                    <input name="guardian " type="text " class="form-control" placeholder="Birth place" value="" required>
+                                    <input name="guardian " type="text " class="form-control shadow" placeholder="Birth place" value="" required>
                                 </div>
                                 <div class="col-md mb-3">
                                     <span>Guardian</span>
-                                    <input name="guardian " type="text " class="form-control" placeholder="Guardian" value="" required>
+                                    <input name="guardian " type="text " class="form-control shadow" placeholder="Guardian" value="" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -142,7 +143,7 @@
                                         <div class="input-group-prepend ">
                                             <div class="input-group-text ">@</div>
                                         </div>
-                                        <input name="email" type="email" class="form-control" placeholder="Email">
+                                        <input name="email" type="email" class="form-control shadow" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-md mb-2">
@@ -151,21 +152,21 @@
                                         <div class="input-group-prepend ">
                                             <div class="input-group-text "><i class="fa fa-phone"></i></div>
                                         </div>
-                                        <input name="number" type="text " class="form-control" placeholder="Mobile Number">
+                                        <input name="number" type="text " class="form-control shadow" placeholder="Mobile Number">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr style="background-color:black;height:1px; margin-top: 3px;">
+                    <hr style="background-color:black;height:1px; margin-top: 10px;">
                     <hr style="background-color:black;height:1px;margin-top: -10px ">
                     <div class="text-center " style="width:150px;margin-left: 15px ">
                         <p class="bg-white " style="margin-top:-30px ">ACADENIC INFO</p>
                     </div>
                 </div>
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-md-2 border border-secondary ">
+                    <div class="row">
+                        <div class="col-md-2 border border-secondary shadow">
                             <span> <strong>Requirements</strong></span>
                             <div class="ml-4 ">
                                 <input type="checkbox" id="item1" name="nso" value="NSO/PSA">
@@ -188,9 +189,9 @@
                                     <span>Grade Level</span>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-graduation-cap "></i></div>
+                                            <div class="input-group-text"><i class="fa fa-graduation-cap"></i></div>
                                         </div>
-                                        <select name="grade " id="grLevel" class="custom-select mr-sm-2 ">
+                                        <select name="gradelevel" id="gradelevel" class="custom-select mr-sm-2 shadow" required>
                                             <option selected>........</option>
                                             <option value="7 ">Grade 7</option>
                                             <option value="8 ">Grade 8</option>
@@ -203,39 +204,36 @@
                                 </div>
                                 <div class="col-md-4 mb-3 ">
                                     <span>Section(For Junior High School)</span>
-                                    <select name="course " id="course " disabled class="custom-select mr-sm-2 ">
-                                            <option value="default " selected>........</option>
-                                            <option value="GAS ">GAS</option>
-                                            <option value="HUMMS ">HUMMS</option>
-                                            <option value="TVL-ICT-1 ">TVL-ICT(PROGRAMMING)</option>
-                                            <option value="TVL-ICT-2 ">TVL-ICT(2D ANIMATION)</option>
-                                            <option value="TVL-ICT-3 ">TVL-ICT(CSS)</option>
-                                            <option value="TVL-HE ">TVL-HE</option>
-                                            <option value="TVL-COOKERY ">TVL-COOKERY</option>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-group"></i></div>
+                                        </div>
+                                        <select disabled name="section" id="section" class="custom-select mr-sm-2 shadow" required>
+                                            <option selected>........</option>
                                             </select>
+                                    </div>
                                 </div>
+
                                 <div class="col-md mb-3 ">
                                     <span>Course/TLE</span>
-                                    <select name="course " id="course " disabled class="custom-select mr-sm-2 ">
-                                        <option value="default " selected>........</option>
-                                        <option value="GAS ">GAS</option>
-                                        <option value="HUMMS ">HUMMS</option>
-                                        <option value="TVL-ICT-1 ">TVL-ICT(PROGRAMMING)</option>
-                                        <option value="TVL-ICT-2 ">TVL-ICT(2D ANIMATION)</option>
-                                        <option value="TVL-ICT-3 ">TVL-ICT(CSS)</option>
-                                        <option value="TVL-HE ">TVL-HE</option>
-                                        <option value="TVL-COOKERY ">TVL-COOKERY</option>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-medal"></i></div>
+                                        </div>
+                                        <select name="course" id="course" class="custom-select mr-sm-2 shadow" required>
+                                        <option selected>........</option>
                                         </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row ">
                                 <div class="col-md mb-3">
                                     <span>Last School Attended</span>
-                                    <input name="lstschool" type="text " class="form-control " placeholder="School name" value="" required>
+                                    <input name="lstschool" type="text" class="form-control shadow" placeholder="School name" value="" required>
                                 </div>
                                 <div class="col-md mb-3">
                                     <span>Addres</span>
-                                    <input name="schooladdress" type="text " class="form-control " placeholder="School Address" value="" required>
+                                    <input name="schooladdress" type="text" class="form-control shadow" placeholder="School Address" value="" required>
                                 </div>
                             </div>
                         </div>
@@ -244,13 +242,109 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end mt-3">
-                <button type="submit" name="save" class="btn btn-success btn-lg mx-3"><span class="fa fa-check "></span> ENROLL</button>
-                <button type="button" class="btn btn-danger btn-lg mx-3"><span class="fa fa-close "></span> CANCEL</button>
+                <button type="submit" name="save" class="btn btn-success btn-lg mx-3 shadow"><span class="fa fa-check "></span> ENROLL</button>
+                <button type="button" class="btn btn-danger btn-lg mx-3 shadow"><span class="fa fa-close "></span><a href="dashboard.html"> CANCEL</a></button>
             </div>
             <br>
         </form>
     </div>
     <script>
+        $(document).ready(function() {
+            $("#gradelevel").change(function() {
+                var grd = $("#gradelevel").val()
+                if (grd == 7) {
+                    $("#section").removeAttr("disabled");
+                    $("#section option").remove();
+                    $('#section').append("<option selected>........</option>");
+                    $('#section').append("<option value = 'SAPPHIRE' >SAPPHIRE</option>");
+                    $('#section').append("<option value = 'DIAMOND' >DIAMOND</option>");
+                    $('#section').append("<option value = 'GOLD' >GOLD</option>");
+                    $('#section').append("<option value = 'EMERALD' >EMERALD</option>");
+                    $("#course option").remove();
+                    $('#course').append("<option selected>........</option>");
+                    $('#course').append("<option value = 'ICT CSS' >ICT CSS</option>");
+                    $('#course').append("<option value = 'ICT CHS' >ICT CHS</option>");
+                    $('#course').append("<option value = 'COOKERY' >COOKERY</option>");
+                    $('#course').append("<option value = 'AGRICULTURE' >AGRICULTURE</option>");
+                    $('#course').append("<option value = 'DRESSMAKING' >DRESSMAKING</option>");
+                } else if (grd == 8) {
+                    $("#section").removeAttr("disabled");
+                    $("#section option").remove();
+                    $('#section').append("<option selected>........</option>");
+                    $('#section').append("<option value = 'ALEXANDRITE' >ALEXANDRITE</option>");
+                    $('#section').append("<option value = 'AMBER' >AMBER</option>");
+                    $('#section').append("<option value = 'AMETHYST' >AMETHYST</option>");
+                    $('#section').append("<option value = 'ANDRADITE' >ANDRADITE</option>");
+                    $("#course option").remove();
+                    $('#course').append("<option selected>........</option>");
+                    $('#course').append("<option value = '1' >ICT CSS</option>");
+                    $('#course').append("<option value = '1' >ELECTRICITY</option>");
+                    $('#course').append("<option value = '1' >COOKERY</option>");
+                    $('#course').append("<option value = '1' >AGRICULTURE</option>");
+                    $('#course').append("<option value = '1' >DRESSMAKING</option>");
+                } else if (grd == 9) {
+                    $("#section").removeAttr("disabled");
+                    $("#section option").remove();
+                    $('#section').append("<option selected>........</option>");
+                    $('#section').append("<option value = 'AQUAMARINE' >AQUAMARINE</option>");
+                    $('#section').append("<option value = 'BERYL' >BERYL</option>");
+                    $('#section').append("<option value = 'AZURITE' >AZURITE</option>");
+                    $('#section').append("<option value = 'BORNITE' >BORNITE</option>");
+                    $("#course option").remove();
+                    $('#course').append("<option selected>........</option>");
+                    $('#course').append("<option value = 'ICT CHS' >ICT CHS</option>");
+                    $('#course').append("<option value = 'ELECTRICITY' >ELECTRICITY</option>");
+                    $('#course').append("<option value = 'COOKERY' >COOKERY</option>");
+                    $('#course').append("<option value = 'AGRICULTURE' >AGRICULTURE</option>");
+                    $('#course').append("<option value = 'HAIR DRESSING' >HAIR DRESSING</option>");
+                } else if (grd == 10) {
+                    $("#section").removeAttr("disabled");
+                    $("#section option").remove();
+                    $('#section').append("<option selected>........</option>");
+                    $('#section').append("<option value = 'SILVER' >SILVER</option>");
+                    $('#section').append("<option value = 'BRONZE' >BRONZE</option>");
+                    $('#section').append("<option value = 'JADE' >JADE</option>");
+                    $('#section').append("<option value = 'ZIRCON' >ZIRCON</option>");
+                    $("#course option").remove();
+                    $('#course').append("<option selected>........</option>");
+                    $('#course').append("<option value = 'ICT CSS' >ICT CSS</option>");
+                    $('#course').append("<option value = 'ICT CHS' >ICT CHS</option>");
+                    $('#course').append("<option value = 'ELECTRICITY' >ELECTRICITY</option>");
+                    $('#course').append("<option value = 'COOKERY' >COOKERY</option>");
+                    $('#course').append("<option value = 'AGRICULTURE' >AGRICULTURE</option>");
+                    $('#course').append("<option value = 'HAIR DRESSING' >HAIR DRESSING</option>");
+                } else {
+                    $("#section").attr('disabled', true)
+                    $("#section option").remove();
+                    $('#section').append("<option selected>........</option>");
+                    $("#course option").remove();
+                    $('#course').append("<option selected>........</option>");
+                    $('#course').append("<option value = 'GAS' >GAS</option>");
+                    $('#course').append("<option value = 'HE' >HE</option>");
+                    $('#course').append("<option value = 'HUMMS' >HUMMS</option>");
+                    $('#course').append("<option value = 'ICT(PROGRAMMING)' >ICT(PROGRAMMING)</option>");
+                    $('#course').append("<option value = 'ICT(CSS)' >ICT(CSS)</option>");
+                    $('#course').append("<option value = 'STEM' >STEM</option>");
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            var readURL = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('.avatar').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $(".file-upload ").on('change', function() {
+                readURL(this);
+            });
+        });
     </script>
 
 </body>

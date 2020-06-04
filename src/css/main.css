@@ -155,3 +155,7 @@ table thead th {
 .element:hover {
     padding-left: 40px;
 }
+
+.bg-gradient-blue {
+    background-image: linear-gradient( #ccecff, #e9e9e9);
+}
