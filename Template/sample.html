@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidebar template</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <script src="src/js/bootstrapjs1.js"></script>
+    <script src="src/js/bootstrapjs2.js"></script>
+    <script src="src/js/bootstrapjs3.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/w3css.css">
+    <script src="src/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+        <!-- Show Button on resize Start -->
+        <!-- ********************************************************************************************************* -->
+        <div class="show-sidebar btn btn-dark w3-sidebar w3-collapse" style="height:100%;width: 73px">
+            <i style="font-size:20px;margin-top: 10px" class="fas fa-chevron-right"></i>
+            <hr style="background-color:gray;width: 150%;margin-left: -10px;">
+            <img style="width:55px;margin-left: -5px" class="rounded-circle mt-2 mb-2" src="src/img/user.jpg" alt="User picture">
+            <hr style="background-color:gray;width: 150%;margin-left: -10px;">
+            <button class="btn text-center mb-3">
+                <i style="font-size:18px;" class="text-white fas fa-tachometer-alt"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-shopping-cart"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-gem"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-chart-line"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-globe"></i>
+            </button>
+            <hr style="background-color:gray;width: 150%;margin-left: -10px;">
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-book"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-calendar"></i>
+            </button>
+            <button class="btn text-center mb-3">
+                    <i style="font-size:18px;" class="text-white fas fa-folder"></i>
+            </button>
+            <div style="position: absolute;top: 860px;margin-left: 15px">
+                <i style="font-size:18px;" class="fa fa-power-off"></i>
+            </div>
+        </div>
+        <!-- Show Button on resize End -->
+        <!-- ********************************************************************************************************* -->
+
+        <!-- Side Start Navigation -->
+        <!-- ********************************************************************************************** -->
+        <nav id="sidebar" class="sidebar-wrapper w3-sidebar w3-collapse">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">CTU MIS</a>
+                    <div onclick="w3_close()" class="close-sidebar">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header text-center">
+                    <div style="margin-left:33%" class="user-pic">
+                        <img class="rounded-circle" src="src/img/user.jpg" alt="User picture">
+                        <div class="user-info">
+                            <span class="user-status ml-sm-1">
+                                <i class="fa fa-circle"></i>
+                                <span>Online</span>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="text-white"> <strong>John Paul Vistal</strong></span>
+                    <span class="text-white">Administrator</span>
+                </div>
+                <!-- sidebar-header  -->
+
+                <div class="sidebar-menu mb-5">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar-dropdown active">
+                            <a href="#" class="close-sidebar" onclick="w3_close()">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>E-commerce</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Products
+                  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Orders</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Credit cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Components</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">General</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Panels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Forms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Charts</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Pie chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Line chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bar chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Histogram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Maps</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Google maps</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Open street map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span>Examples</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer mt-5">
+                <a href="#" class="mb-4 mt-3">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-warning notification">3</span>
+                </a>
+                <a href="#" class="mb-4 mt-3">
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-pill badge-success notification">7</span>
+                </a>
+                <a href="#" class="mb-4 mt-3">
+                    <i class="fa fa-cog"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a href="#" class="mb-4 mt-3">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Side End Navigation -->
+        <!-- ***************************************************************************************************** -->
+        <div>
+            <div class="w3-overlay w3-hide-large w3-animate-opacity close-sidebar" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+            <header id="portfolio" class="ml-3 show-sidebar" style="position:fixed;left: 0px">
+                <span class="element w3-hover-blue w3-hide-large w3-xlarge w3-text-white bg-dark shadow-lg px-3 pl-4 py-1-sm" style="position: absolute;margin-top:5px;z-index: 1;margin-left: -20px ;border-radius:0px 90px 90px 0px" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            </header>
+        </div>
+        <main class="page-content ">
+            <div class="container-fluid shadow-lg">
+                <div class="row">
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-info text-center">
+                            <button class="btn btn-info shadow-lg">
+                                            <a href="enrollmentform.html">
+                                            <div class="card-body">
+                                                    <i style = "font-size: 120px;"class = "fa fa-file-alt text-dark"></i>
+                                            </div>
+                                           
+                                                    <h5 class="card-footer">ENROLLMENT FORM</h5>
+                                            </a>   
+                                    </button>
+
+                        </div>
+                    </div>
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-warning text-center">
+                            <button class="btn btn-warning shadow-lg">
+                                                    <div class="card-body">
+                                                        <i style = "font-size: 120px;"class = "fas fa-chart-line text-dark"></i>
+                                                    </div>
+                                                    <h5 class="card-footer">ENROLLMENT RECORDS</h5>
+                                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-primary text-center">
+                            <button class="btn btn-primary shadow-lg">
+                                                    <div class="card-body">
+                                                            <i style = "font-size: 120px;"class = "fas fa-money text-dark"></i>
+                                                    </div>
+                                                    <h5 class="card-footer">PAYMENT</h5>
+                             </button>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-info text-center">
+                            <button class="btn btn-info shadow-lg">
+                                                <a href="enrollmentform.html">
+                                                <div class="card-body">
+                                                        <i style = "font-size: 120px;"class = "fa fa-file-alt text-dark"></i>
+                                                </div>
+                                               
+                                                        <h5 class="card-footer">ENROLLMENT FORM</h5>
+                                                </a>   
+                                        </button>
+
+                        </div>
+                    </div>
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-warning text-center">
+                            <button class="btn btn-warning shadow-lg">
+                                                        <div class="card-body">
+                                                            <i style = "font-size: 120px;"class = "fas fa-chart-line text-dark"></i>
+                                                        </div>
+                                                        <h5 class="card-footer">ENROLLMENT RECORDS</h5>
+                                                </button>
+
+                        </div>
+                    </div>
+                    <div class="col-sm w3-animate-zoom">
+                        <div class="card bg-primary text-center">
+                            <button class="btn btn-primary shadow-lg">
+                                                        <div class="card-body">
+                                                                <i style = "font-size: 120px;"class = "fas fa-money text-dark"></i>
+                                                        </div>
+                                                        <h5 class="card-footer">PAYMENT</h5>
+                                 </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+
+
+    <script>
+        function w3_open() {
+            document.getElementById("sidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
