@@ -358,13 +358,13 @@ body {
 .page-wrapper .page-content {
     display: inline-block;
     width: 100%;
-    padding-left: 75px;
-    padding-top: 20px;
-    padding-right: 10px;
+    padding-left: 48px;
+    padding-top: 10px;
+    padding-right: 7px;
 }
 
 .page-wrapper .page-content>div {
-    padding: 20px 10px;
+    padding: 10px 8px;
 }
 
 .page-wrapper .page-content {
