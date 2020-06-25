@@ -21,16 +21,17 @@ jQuery(function($) {
                 .addClass("active");
         }
     });
-
     $(".close-sidebar").click(function() {
         $(".page-wrapper").removeClass("toggled");
+        $("#showmenu").removeClass("hide");
+        $("#closemenu").addClass("hide");
     });
 
     $(".show-sidebar").click(function() {
         $(".page-wrapper").addClass("toggled");
+        $("#showmenu").addClass("hide");
+        $("#closemenu").removeClass("hide");
+        $("#showmenu").removeClass("show-small");
+        $("#closemenu").removeClass("hide-small");
     });
-
-
-
-
 });
